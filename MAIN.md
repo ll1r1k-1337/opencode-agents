@@ -435,3 +435,9 @@ Conclusion
 The creation of multi-agent systems at the intersection of management, Diamat, and psychology opens the way to next-generation management technologies. The integration of universal dialectical logic allows algorithms to work creatively with contradictions. Implementing the BEN architecture and OCEAN model gives agents human-like depth and unpredictability, necessary for realistic simulations. And the use of reflexive control theory and Lefebvre's algebra of conscience allows modeling ethical and strategic aspects of interaction.
 
 The future of these technologies lies not merely in automating routine, but in creating "digital twins" of society capable of acting as simulators for finding ways for the harmonious development of humanity in conditions of increasing complexity. As the classics of dialectics taught, the task is not only to explain the world (model it), but to change it—through creating environments that facilitate the unlocking of the creative potential of every subject.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
