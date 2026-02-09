@@ -38,7 +38,7 @@ The following agents are defined in `.opencode/agents/`:
 2.  Clone this repository or copy the `.opencode` directory to your project root.
 3.  Run `opencode`.
 
-### Global Installation
+### Global Installation (Linux/macOS)
 
 To use these agents across all your projects without per-project configuration:
 
@@ -48,6 +48,16 @@ To use these agents across all your projects without per-project configuration:
     ./install.sh
     ```
     This installs the configuration to `~/.config/opencode/`.
+3.  Run `opencode`.
+
+### Global Installation (Windows)
+
+1.  Clone this repository.
+2.  Run the PowerShell script:
+    ```powershell
+    .\install.ps1
+    ```
+    This installs the configuration to `$HOME\.config\opencode`.
 3.  Run `opencode`.
 
 ### Interaction
