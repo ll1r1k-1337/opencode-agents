@@ -32,10 +32,37 @@ The following agents are defined in `.opencode/agents/`:
 
 ## Usage
 
+### Local Installation
+
 1.  Install [OpenCode](https://github.com/opencode-ai/opencode).
 2.  Clone this repository or copy the `.opencode` directory to your project root.
 3.  Run `opencode`.
-4.  Interact with the agents:
+
+### Global Installation (Linux/macOS)
+
+To use these agents across all your projects without per-project configuration:
+
+1.  Clone this repository.
+2.  Run the installation script:
+    ```bash
+    ./install.sh
+    ```
+    This installs the configuration to `~/.config/opencode/`.
+3.  Run `opencode`.
+
+### Global Installation (Windows)
+
+1.  Clone this repository.
+2.  Run the PowerShell script:
+    ```powershell
+    .\install.ps1
+    ```
+    This installs the configuration to `$HOME\.config\opencode`.
+3.  Run `opencode`.
+
+### Interaction
+
+Interact with the agents:
     *   `@methodologist Analyze our current workflow.`
     *   `@dialectician Resolve the conflict between performance and readability here.`
     *   `@reflexive_manager Help me convince the team to refactor.`
