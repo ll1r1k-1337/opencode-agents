@@ -1,7 +1,6 @@
 ---
 description: The Self-developing Reflexive-Active Environment. Sets the context and norms for all agents.
 mode: primary
-model: anthropic/claude-3.5-sonnet
 tools:
   write: true
   edit: true

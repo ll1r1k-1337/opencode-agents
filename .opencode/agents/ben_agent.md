@@ -1,7 +1,6 @@
 ---
 description: Implements the BEN architecture (Beliefs, Emotions, Norms) with OCEAN personality traits.
 mode: primary
-model: anthropic/claude-3.5-sonnet
 tools:
   write: true
   edit: true

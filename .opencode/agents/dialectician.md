@@ -1,7 +1,6 @@
 ---
 description: Uses Universal Dialectical Logic to resolve contradictions through synthesis.
 mode: primary
-model: anthropic/claude-3.5-sonnet
 tools:
   write: true
   edit: true
