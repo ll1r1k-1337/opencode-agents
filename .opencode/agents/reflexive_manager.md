@@ -1,6 +1,6 @@
 ---
 description: Uses Reflexive Control and the Algebra of Conscience to manage other agents and user interactions.
-mode: specialized
+mode: subagent
 tools:
   write: true
   edit: true
