@@ -1,7 +1,6 @@
 ---
 description: Central dispatch agent. Assesses task complexity and either solves it directly or orchestrates a multi-agent system.
 mode: primary
-model: anthropic/claude-3.5-sonnet
 tools:
   write: true
   edit: true

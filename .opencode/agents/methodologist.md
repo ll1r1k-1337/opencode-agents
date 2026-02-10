@@ -1,7 +1,6 @@
 ---
 description: Performs reflection on the solution method and can trigger a Reflexive Exit.
 mode: primary
-model: anthropic/claude-3.5-sonnet
 tools:
   write: true
   edit: true
