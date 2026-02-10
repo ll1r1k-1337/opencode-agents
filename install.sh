@@ -25,7 +25,7 @@ cp -r "$SOURCE_DIR/"* "$CONFIG_DIR/"
 # Update configuration if exists
 UPDATE_SCRIPT="$CONFIG_DIR/scripts/update_config.py"
 AGENTS_DIR="$CONFIG_DIR/agents"
-CONFIG_FILES=("opencofig.json" "openconfig.json" "opencode.json")
+CONFIG_FILES=("openconfig.json" "opencode.json")
 
 if [ -f "$UPDATE_SCRIPT" ]; then
     for config_file in "${CONFIG_FILES[@]}"; do

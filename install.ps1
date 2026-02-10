@@ -26,7 +26,7 @@ Copy-Item -Path "$SourceDir\*" -Destination $TargetDir -Recurse -Force
 # Update configuration if exists
 $UpdateScript = Join-Path $TargetDir "scripts\update_config.py"
 $AgentsDir = Join-Path $TargetDir "agents"
-$ConfigFiles = @("opencofig.json", "openconfig.json", "opencode.json")
+$ConfigFiles = @("openconfig.json", "opencode.json")
 
 if (Test-Path $UpdateScript) {
     foreach ($ConfigFile in $ConfigFiles) {
