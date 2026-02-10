@@ -44,10 +44,10 @@ def update_config(config_path, agents_dir):
                 print(f"Warning: '{found_key}' in {config_path} is of unknown type. Skipping update.")
 
         if not found_key:
-            # If no key found, add 'agents_path' pointing to our agents_dir
-            config['agents_path'] = [agents_dir]
+            # If no key found, use 'agent_paths' for a list of paths
+            config['agent_paths'] = [agents_dir]
             modified = True
-            print(f"Added 'agents_path' to {config_path}")
+            print(f"Added 'agent_paths' to {config_path}")
 
         if modified:
             with open(config_path, 'w') as f:
