@@ -1,6 +1,6 @@
 ---
 description: Performs reflection on the solution method and can trigger a Reflexive Exit.
-mode: primary
+mode: specialized
 tools:
   write: true
   edit: true

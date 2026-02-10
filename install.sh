@@ -27,6 +27,20 @@ UPDATE_SCRIPT="$CONFIG_DIR/scripts/update_config.py"
 AGENTS_DIR="$CONFIG_DIR/agents"
 CONFIG_FILES=("openconfig.json" "opencode.json")
 
+# Create config file if none exists
+config_exists=false
+for config_file in "${CONFIG_FILES[@]}"; do
+    if [ -f "$CONFIG_DIR/$config_file" ]; then
+        config_exists=true
+        break
+    fi
+done
+
+if [ "$config_exists" = false ]; then
+    echo "No configuration file found. Creating default openconfig.json..."
+    echo "{}" > "$CONFIG_DIR/openconfig.json"
+fi
+
 if [ -f "$UPDATE_SCRIPT" ]; then
     for config_file in "${CONFIG_FILES[@]}"; do
         config_path="$CONFIG_DIR/$config_file"

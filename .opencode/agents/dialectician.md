@@ -1,6 +1,6 @@
 ---
 description: Uses Universal Dialectical Logic to resolve contradictions through synthesis.
-mode: primary
+mode: specialized
 tools:
   write: true
   edit: true

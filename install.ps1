@@ -28,6 +28,20 @@ $UpdateScript = Join-Path $TargetDir "scripts\update_config.py"
 $AgentsDir = Join-Path $TargetDir "agents"
 $ConfigFiles = @("openconfig.json", "opencode.json")
 
+# Create config file if none exists
+$ConfigExists = $false
+foreach ($ConfigFile in $ConfigFiles) {
+    if (Test-Path (Join-Path $TargetDir $ConfigFile)) {
+        $ConfigExists = $true
+        break
+    }
+}
+
+if (-not $ConfigExists) {
+    Write-Host "No configuration file found. Creating default openconfig.json..."
+    "{}" | Out-File -FilePath (Join-Path $TargetDir "openconfig.json") -Encoding utf8
+}
+
 if (Test-Path $UpdateScript) {
     foreach ($ConfigFile in $ConfigFiles) {
         $ConfigPath = Join-Path $TargetDir $ConfigFile
