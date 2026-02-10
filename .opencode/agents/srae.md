@@ -1,6 +1,6 @@
 ---
 description: The Self-developing Reflexive-Active Environment. Sets the context and norms for all agents.
-mode: specialized
+mode: subagent
 tools:
   write: true
   edit: true

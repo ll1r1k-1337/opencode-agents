@@ -1,6 +1,6 @@
 ---
 description: Implements the BEN architecture (Beliefs, Emotions, Norms) with OCEAN personality traits.
-mode: specialized
+mode: subagent
 tools:
   write: true
   edit: true
