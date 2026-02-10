@@ -43,13 +43,11 @@ def update_config(config_path, agents_dir):
             else:
                 print(f"Warning: '{found_key}' in {config_path} is of unknown type. Skipping update.")
 
-        # If no key found, we might want to add 'agents_path' pointing to our agents_dir?
-        # The prompt says "modify it if it needed". If the user has a config file but no agent path,
-        # maybe they are relying on defaults. Adding it explicitly ensures our agents are found.
-        # However, forcing a key might be risky if the tool doesn't support it.
-        # Given the ambiguity, I will add 'agents_path' only if the config is otherwise empty
-        # or if it seems appropriate. But safer is to not add if key is missing unless we know the schema.
-        # I'll stick to updating existing keys for safety, as per my previous thought process.
+        if not found_key:
+            # If no key found, add 'agents_path' pointing to our agents_dir
+            config['agents_path'] = [agents_dir]
+            modified = True
+            print(f"Added 'agents_path' to {config_path}")
 
         if modified:
             with open(config_path, 'w') as f:
